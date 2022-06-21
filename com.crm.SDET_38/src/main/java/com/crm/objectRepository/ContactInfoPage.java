@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ContactInfoPage {
 
 	//Declaration
+	//updated
 	@FindBy(xpath="//span[contains(text(),'Contact Information')]")
 	private WebElement contactHeaderTxt;
 	
