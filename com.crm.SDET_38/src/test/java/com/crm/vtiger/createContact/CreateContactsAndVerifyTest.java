@@ -32,6 +32,7 @@ public class CreateContactsAndVerifyTest extends BaseClass {
 		String ContactName = FirstName+RandNum;
 		
 		//Click on Contacts in Homepage
+		//changed
 		HomePage homePage = new HomePage(driver);
 		homePage.clickOnContacts();
 		
