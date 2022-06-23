@@ -44,10 +44,10 @@ public class BaseClass  {
     	  public void launchThebrowser() throws Throwable {
     	System.out.println("Launch the Browser");
 	//Fetch data from Property File
-    	//String URL=fLib.getPropertyKeyValue(IPathConstant.filePath, "url");
+    	String URL=fLib.getPropertyKeyValue(IPathConstant.filePath, "url");
     	//String URL=System.getProperty("url");
-	 //String BROWSER=fLib.getPropertyKeyValue(IPathConstant.filePath, "browser");
-	 String BROWSER=System.getProperty("browser");
+	 String BROWSER=fLib.getPropertyKeyValue(IPathConstant.filePath, "browser");
+	 //String BROWSER=System.getProperty("browser");
 	
 			
 	if(BROWSER.equalsIgnoreCase("chrome")) {
@@ -64,7 +64,7 @@ public class BaseClass  {
 	  }
 	 //Enter Url
 	sdriver=driver;
-	 //sdriver.get(URL);
+	 sdriver.get(URL);
 	
 	 //Synchronize Through implicit wait
 	 wLib.waitForPageToLoad(driver, 10);
